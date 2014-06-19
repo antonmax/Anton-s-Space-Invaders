@@ -3,11 +3,10 @@
 #include "stdafx.h"
 #include "State.h"
 
-class CountdownTimer;
+//class CountdownTimer;
 class SpriteObject;
 class PlayerObject;
 
-class Keyboard;
 class GameState : public State {
 public:
 	GameState();
@@ -18,11 +17,11 @@ public:
 	std::string Next();
 	bool IsType(const std::string &type);
 
-	void EndProgram();
+	/*void EndProgram();
 	void Move();
 	void Shoot();
 	void MoveBullet(int i);
-	void MoveNme();
+	void MoveNme();*/
 private:
 	std::string m_next_state;
 
@@ -30,7 +29,7 @@ private:
 	SpriteObject* m_background;
 	sf::Texture m_background_texture;
 
-	CountdownTimer* m_timer;
+	//CountdownTimer* m_timer;
 	PlayerObject * m_ship;
 	sf::Texture m_ship_texture;
 

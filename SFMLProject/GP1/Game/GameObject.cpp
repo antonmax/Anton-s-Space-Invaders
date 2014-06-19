@@ -3,18 +3,12 @@
 #include "GameObject.h"
 //#include "Collider.h"
 
-GameObject::GameObject(sf::Texture* texture, float radius, int flag)
+GameObject::GameObject(sf::Texture* texture, float radius)
 :m_position(0.0f, 0.0f)
 ,m_texture(texture)
-,m_collider(collider)
-,m_flag(flag)
 ,m_radius(radius)
-,m_dirt_texture(dirt_texture)
 {
-	m_sprite = new sf::Sprite(*m_texture);
-	if(m_dirt_texture != nullptr){
-		m_dirt_sprite1 = new sf::Sprite(*m_dirt_texture);
-	}
+	//m_sprite = new sf::Sprite(*m_texture);
 }
 
 GameObject::GameObject()
@@ -48,16 +42,6 @@ sf::Texture* GameObject::GetTexture()
 	return m_texture;
 }
 	
-bool GameObject::HasCollider() const
-{
-		
-	return m_collider != nullptr;
-}
-
-Collider* GameObject::GetCollider()
-{
-	return m_collider;
-}
 
 sf::Sprite* GameObject::GetSprite()
 {
@@ -67,10 +51,6 @@ sf::Sprite* GameObject::GetSprite()
 void GameObject::Draw(sf::RenderWindow *window)
 {
 	window->draw(*m_sprite);
-	if(m_dirt_texture != nullptr)
-	{
-		window->draw(*m_dirt_sprite1);
-	}
 }
 
 float GameObject::GetRadius()

@@ -101,8 +101,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Anton%27s Space Invaders\Playground Panic\Project\Game\CountdownTimer.cpp" />
-    <ClCompile Include="..\..\..\Anton%27s Space Invaders\Playground Panic\Project\Game\GameObject.cpp" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Main.cpp" />

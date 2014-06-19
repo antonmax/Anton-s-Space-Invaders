@@ -1,8 +1,6 @@
 #include "stdafx.h"
-#include <iostream>
 #include "GameState.h"
 #include "PlayerObject.h"
-
 #include "SpriteObject.h"
 
 #include <cmath>

@@ -1,7 +1,9 @@
 #pragma once
 #include "stdafx.h"
-struct SDL_Texture;
-struct SDL_Surface;
+#include <SFML\Graphics.hpp>
+
+struct Image;
+
 
 class Sprite : sf::Sprite{
 	friend class DrawManager;

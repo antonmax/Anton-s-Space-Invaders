@@ -8,8 +8,8 @@
 
 class Keyboard;
 class Sprite;
-class Collider;
-class AnimatedSprite;
+//class Collider;
+//class AnimatedSprite;
 
 class PlayerObject : public GameObject
 {
